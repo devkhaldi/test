@@ -9,6 +9,7 @@ export class Storage extends Component {
     this.marketingFiles = React.createRef();
     this.templatesFiles = React.createRef();
     this.projectsFiles = React.createRef();
+    this.projectorCourcesFiles = React.createRef();
 
 
     // icons refs
@@ -17,13 +18,15 @@ export class Storage extends Component {
     this.marketingIcon = React.createRef();
     this.templatesIcon = React.createRef();
     this.projectsIcon = React.createRef();
+    this.projectorCourcesIcon = React.createRef();
 
     this.state = {
       analyticsFilesAppend: false,
       assetsFilesAppend: false,
       marketingFilesAppend: false,
       templatesFilesAppend: false,
-      projectsFilesAppend: false
+      projectsFilesAppend: false,
+      projectorCourcesAppend:false
     };
   }
   showAnalyticsFiles = () => {
@@ -100,6 +103,20 @@ export class Storage extends Component {
         projectsFilesAppend: true
       });
     }
+  }
+    showProjectorCourcesFiles = () => {
+      this.projectorCourcesIcon.current.className = "fas fa-caret-right arrow-icon"
+      if (this.state.projectorCourcesAppend) {
+        this.setState({
+          projectorCourcesAppend: false
+        });
+      }
+      else {
+        this.projectsIcon.current.className = "fas fa-caret-down arrow-icon"
+        this.setState({
+          projectorCourcesAppend: true
+        });
+      }
    
   };
   render() {
@@ -170,14 +187,14 @@ export class Storage extends Component {
           </div>
 
           {/* Projector Cources */}
-          <div className="storageFileContainer my-2">
+          <div onClick={this.showProjectorCourcesFiles} className="storageFileContainer my-2">
             <div>
-              <i className="fas fa-caret-right arrow-icon"></i>
-              <i className="fas fa-folder folder-icon"></i>
+              <i ref={this.projectorCourcesIcon} className="fas fa-caret-right arrow-icon"></i>
+              <i  className="fas fa-folder folder-icon"></i>
               <span className="storageFile-label">Projector Cources</span>
             </div>
-            <div ref="file">
-              {this.state.analyticsFilesAppend && <Files />}
+            <div ref={this.projectsFiles} className="files pl-2">
+              {this.state.projectorCourcesAppend && <Files />}
             </div>
           </div>
         </div>
