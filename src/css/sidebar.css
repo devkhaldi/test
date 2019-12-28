@@ -1,0 +1,148 @@
+.sideBar {
+  padding: 0px;
+  background: #fff;
+  border-right: solid 1px #f2f3f7;
+  height: 900px;
+  overflow: scroll;
+}
+
+@media (min-width: 1200px) {
+  .sideBar {
+    width: 240px !important;
+    top: 0px;
+  }
+}
+@media (max-width: 767px) {
+  .sideBar {
+    display: none;
+  }
+}
+
+/* Marketing team */
+.marketingTeam-Title {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+.numberMembers {
+  color: #999999;
+  font-size: 13px;
+  margin: 0px;
+}
+.numberMembers-container {
+  padding: 0px;
+  margin: 0px !important;
+  margin-left: 1px !important;
+}
+.marketingTeam-icon {
+  font-size: 15px;
+  padding-top: 14px;
+  color: #cccccc;
+  padding-left: 0px;
+}
+.marketingTeam-icon i {
+  cursor: pointer;
+  margin-left: 0px !important;
+}
+.marketingTeam {
+  border-bottom: solid 1px #f2f3f7;
+  background: #ffffff;
+  margin: 0px !important;
+  padding: 10px 0px 10px;
+}
+
+/* Storage */
+.storageContainer {
+  color: #0f1c6f;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.storageTitle {
+  padding: 5px 0px 5px 0px;
+  font-size: large;
+  font-weight: bold;
+  color: #666;
+}
+.storageSubTitle {
+  padding: 0px 0px 5px 0px;
+  font-size: medium;
+  color: #7d85f1;
+}
+.storageFileContainer {
+  padding-left: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.storageFileContainer .folder-icon {
+  color: #abafcd;
+  margin-right: 15px !important;
+  margin-left: 10px !important;
+}
+.storageFileContainer .arrow-icon {
+  color: #787eaf;
+}
+.storageFileContainer .storaeFile-label {
+  color: #131f69;
+}
+.storageByFileType {
+  background: #f6f8fc;
+  margin-top: 150px !important;
+  border-radius: 6px;
+}
+.storageByFileType .folder {
+  border-bottom: solid 1px #eff2fb;
+}
+.storageByFileType .textDoc .fa-chevron-right,
+.storageByFileType .presentation .fa-chevron-right,
+.storageByFileType .sheets .fa-chevron-right,
+.storageByFileType .more .fa-chevron-right {
+  margin-top: 6px !important;
+  float: right;
+  color: #b0b6ce;
+  font-size: 10px !important;
+}
+.folder,
+.textDoc,
+.presentation,
+.sheets,
+.more {
+  cursor: pointer;
+}
+.folder i,
+.textDoc i,
+.presentation i,
+.sheets i,
+.more i {
+  color: #5964ff;
+  font-size: 18px;
+}
+.folder:hover,
+.textDoc:hover,
+.presentation:hover,
+.sheets:hover,
+.more:hover {
+  background: #fff;
+}
+.storageCreateNew button {
+  background: #5964ff !important;
+  height: 44px;
+  color: #fdfeff;
+  border-radius: 8px;
+}
+.storageCreateNew button i {
+  height: 28px;
+  background: #7983ff;
+  font-size: 10px !important;
+  color: #fdfeff;
+  border-radius: 4px;
+}
+
+.storageSharedWithMe,
+.storageRecent,
+.storageStarred,
+.storageTrash {
+  cursor: pointer;
+}

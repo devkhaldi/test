@@ -1,0 +1,10 @@
+#collapseExample {
+  z-index: 10;
+  border: none !important;
+}
+
+.responsiveSideBar {
+  padding: 0px;
+  background: #fff;
+  width: 100%;
+}

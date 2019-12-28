@@ -1,0 +1,99 @@
+/* Header text */
+.storageUsage .bigText span {
+  font-size: 25px;
+  font-weight: bold;
+  color: #4958eb;
+}
+.storageUsage .bigText .float-right {
+  font-size: 25px;
+  font-weight: bold;
+  color: #c5c8dd;
+}
+.storageUsage .smallText span {
+  font-size: 15px;
+  color: #999ebd;
+}
+.storageUsage .smallText .float-right {
+  font-size: 15px;
+  color: #6770f1;
+}
+
+/* Progress bar  */
+
+.progress {
+  height: 8px;
+}
+
+/* Data usage by file type */
+.dataByFileTypes {
+  cursor: pointer;
+}
+.dataByFileTypes div img {
+  height: 40px;
+  border-radius: 6px;
+  padding: 10px;
+}
+.dataByFileTypes .imageIcon img {
+  background: #efeffd;
+}
+.dataByFileTypes .documentIcon img {
+  background: #e7faf3;
+}
+.dataByFileTypes .mediaIcon img {
+  background: #ffefed;
+}
+.dataByFileTypes .otherIcon img {
+  background: #fef8e8;
+}
+.dataByFileTypes .unknownIcon img {
+  background: #eff3ff;
+}
+.dataByFileTypes .row .col-4 {
+  text-align: right;
+}
+.dataByFileTypes .row .col-2 {
+  padding-left: 0px !important;
+}
+
+.dataUsage .value {
+  color: #4957e7;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: right !important;
+}
+.fileType {
+  color: #4f598f;
+  font-size: 15px;
+}
+.numberFiles {
+  color: #a6aac7;
+  font-size: 14px;
+}
+
+/* Upgrade */
+
+.upgradeAccount {
+  border-radius: 10px;
+  border: solid #d1d4f3 2px;
+}
+.upgradeAccount .titleContainer {
+  color: #192399;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+.upgradeAccount .contentContainer {
+  color: #8f94c5;
+  text-align: center;
+  font-size: 14px;
+}
+.upgradeButton , .upgradeButton:hover {
+  background: #5964ff;
+  color: #fff;
+  border-radius: 8px;
+  height: 40px;
+  width: 120px;
+}
+.buttonContainer {
+  text-align: center;
+}

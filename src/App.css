@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+  margin: 0 !important;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.fa-bars {
+  float: right;
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  .fa-bars {
+    display: block !important;
+    position: relative;
+    top: 20px !important;
+    font-size: 30px !important;
+    cursor: pointer;
+    color: #ddd;
+  }
+  .mainCompoContainer {
+    display: flex !important;
+    flex-wrap: wrap !important;
+  }
+}
+@media (min-width: 768px) {
+  #collapseExample {
+    display: none !important;
+  }
+}
+
+/* Custom scroll bar  */
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5964ff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5964ff;
+}
+
+/* MainCompo */
+.mainCompo {
+  height: 100%;
+}
+
+.mainCompoContainer {
+  display: flex;
+  height: 100%;
+  margin-left: 4rem !important;
+}
+.mainCompoContainer .container-fluid {
+  padding: 0;
+}
+
+/* End MainCompo */
+
+/* Content */
+.content {
+  background: #f6f8fc;
+}
+.search {
+}
+.recentFiles {
+}
+
+/* End Content */
+
+/* DataUsage */
+.dataUsage {
+}
+.storageUsage {
+}
+.upgradeAccount {
+}
+/* End DataUsage */
