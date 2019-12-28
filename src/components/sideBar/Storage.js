@@ -112,7 +112,7 @@ export class Storage extends Component {
         });
       }
       else {
-        this.projectsIcon.current.className = "fas fa-caret-down arrow-icon"
+        this.projectorCourcesIcon.current.className = "fas fa-caret-down arrow-icon"
         this.setState({
           projectorCourcesAppend: true
         });
