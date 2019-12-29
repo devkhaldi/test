@@ -11,43 +11,23 @@ export class Search extends Component {
     this.dropBoxRef = createRef();
     this.oneDriveRef = createRef();
   }
-  // google drive mouse events
+  // Card mouse events
   googleDriveMouseEnter = () => {
-    setTimeout(() => {
-      this.googleDriveRef.current.className = "googledrive storageCard m-2";
-    }, 50);
-  };
-  googleDriveMouseLeave = () => {
-    setTimeout(() => {
-      this.googleDriveRef.current.className = "googledrive cardHovered storageCard m-2";
-    }, 50);
-  };
-  // Drop box mouse events
-  dropBoxMouseEnter = () => {
-    setTimeout(() => {
-      this.googleDriveRef.current.className = "googledrive storageCard m-2";
-      this.dropBoxRef.current.className = "dropbox cardHovered storageCard m-2";
-    }, 50);
-  };
-  dropBoxMouseLeave = () => {
-    setTimeout(() => {
-      this.googleDriveRef.current.className = "googledrive cardHovered storageCard m-2";
-      this.dropBoxRef.current.className = "dropbox storageCard m-2";
-    }, 50);
+    this.googleDriveRef.current.className = "googledrive cardHovered storageCard m-2";
+    this.dropBoxRef.current.className = "dropbox storageCard m-2";
+    this.oneDriveRef.current.className = "onedrive storageCard m-2";
   };
 
-  // One drive mouse events
-  oneDriveMouseEnter = () => {
-    setTimeout(() => {
-      this.googleDriveRef.current.className = "googledrive storageCard m-2";
-      this.oneDriveRef.current.className = "onedrive cardHovered storageCard m-2";
-    }, 50);
+  dropBoxMouseEnter = () => {
+    this.googleDriveRef.current.className = "googledrive storageCard m-2";
+    this.dropBoxRef.current.className = "dropbox cardHovered storageCard m-2";
+    this.oneDriveRef.current.className = "onedrive storageCard m-2";
   };
-  oneDriveMouseLeave = () => {
-    setTimeout(() => {
-      this.googleDriveRef.current.className = "googledrive cardHovered storageCard m-2";
-      this.oneDriveRef.current.className = "onedrive storageCard m-2";
-    }, 50);
+
+  oneDriveMouseEnter = () => {
+    this.googleDriveRef.current.className = "googledrive storageCard m-2";
+    this.dropBoxRef.current.className = "dropbox storageCard m-2";
+    this.oneDriveRef.current.className = "onedrive cardHovered storageCard m-2";
   };
 
   render() {
@@ -72,7 +52,6 @@ export class Search extends Component {
                 <div
                   ref={this.googleDriveRef}
                   onMouseEnter={this.googleDriveMouseEnter}
-                  onMouseLeave={this.googleDriveMouseLeave}
                   className="googledrive cardHovered storageCard m-2">
                   <div className="header">
                     <div className="moreIcon float-right">
@@ -107,7 +86,6 @@ export class Search extends Component {
                 <div
                   ref={this.dropBoxRef}
                   onMouseEnter={this.dropBoxMouseEnter}
-                  onMouseLeave={this.dropBoxMouseLeave}
                   className="dropbox storageCard m-2">
                   <div className="header">
                     <div className="moreIcon float-right">
@@ -142,7 +120,6 @@ export class Search extends Component {
                 <div
                   ref={this.oneDriveRef}
                   onMouseEnter={this.oneDriveMouseEnter}
-                  onMouseLeave={this.oneDriveMouseLeave}
                   className="onedrive storageCard m-2">
                   <div className="header">
                     <div className="moreIcon float-right">

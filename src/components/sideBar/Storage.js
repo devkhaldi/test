@@ -128,8 +128,8 @@ export class Storage extends Component {
         </div>
         <div className="storageFiles">
           {/* Analytics */}
-          <div onClick={this.showAnalyticsFiles} className="storageFileContainer my-2">
-            <div>
+          <div className="storageFileContainer my-2">
+            <div onClick={this.showAnalyticsFiles}>
               <i ref={this.analyticsIcon} className="fas fa-caret-right arrow-icon"></i>
               <i className="fas fa-folder folder-icon"></i>
               <span className="storageFile-label">Analytics</span>
@@ -140,8 +140,8 @@ export class Storage extends Component {
           </div>
 
           {/* Assets */}
-          <div onClick={this.showAssetsFiles} className="storageFileContainer my-2">
-            <div>
+          <div className="storageFileContainer my-2">
+            <div onClick={this.showAssetsFiles}>
               <i ref={this.assetsIcon} className="fas fa-caret-right arrow-icon"></i>
               <i className="fas fa-folder folder-icon"></i>
               <span className="storageFile-label">Assets</span>
@@ -151,8 +151,8 @@ export class Storage extends Component {
             </div>
           </div>
           {/* Marketing */}
-          <div onClick={this.showMarketingFiles} className="storageFileContainer my-2">
-            <div>
+          <div className="storageFileContainer my-2">
+            <div onClick={this.showMarketingFiles}>
               <i ref={this.marketingIcon} className="fas fa-caret-right arrow-icon"></i>
               <i className="fas fa-folder folder-icon"></i>
               <span className="storageFile-label">Marketing</span>
@@ -162,8 +162,8 @@ export class Storage extends Component {
             </div>
           </div>
           {/* Templates */}
-          <div onClick={this.showTemplatesFiles} className="storageFileContainer my-2">
-            <div>
+          <div className="storageFileContainer my-2">
+            <div onClick={this.showTemplatesFiles} >
               <i ref={this.templatesIcon} className="fas fa-caret-right arrow-icon"></i>
               <i className="fas fa-folder folder-icon"></i>
               <span className="storageFile-label">Templates</span>
@@ -173,8 +173,8 @@ export class Storage extends Component {
             </div>
           </div>
           {/* Projects */}
-          <div onClick={this.showprojectsFiles} className="storageFileContainer my-2">
-            <div>
+          <div className="storageFileContainer my-2">
+            <div onClick={this.showprojectsFiles}>
               <i ref={this.projectsIcon} className="fas fa-caret-right arrow-icon"></i>
               <i className="fas fa-folder folder-icon"></i>
               <span className="storageFile-label">Projects</span>
@@ -185,8 +185,8 @@ export class Storage extends Component {
           </div>
 
           {/* Projector Cources */}
-          <div onClick={this.showProjectorCourcesFiles} className="storageFileContainer my-2">
-            <div>
+          <div className="storageFileContainer my-2">
+            <div onClick={this.showProjectorCourcesFiles}>
               <i ref={this.projectorCourcesIcon} className="fas fa-caret-right arrow-icon"></i>
               <i  className="fas fa-folder folder-icon"></i>
               <span className="storageFile-label">Projector Cources</span>
