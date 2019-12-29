@@ -46,7 +46,7 @@ function Files() {
         return (
           <div>
             <i className="fas fa-file folder-icon"></i>
-            <span className="storageFile-label">{rf.name.substring(0, 6)}</span>
+            <span className="storageFile-label">{rf.name.substring(0, 15)}</span>
           </div>
         );
       })}

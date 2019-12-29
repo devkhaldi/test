@@ -3,7 +3,6 @@ import Search from "./content/Search";
 import Folder from "./content/Folder";
 import RecentFile from "./content/RecentFile";
 import "../css/content.css";
-import ResponsiveSideBar from "./ResponsiveSideBar";
 
 export class Content extends Component {
   constructor(props) {

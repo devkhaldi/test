@@ -66,6 +66,7 @@
 box-shadow: 0px 40px 69px -34px rgba(0,0,0,0.49);
 }
 
+
 @media (max-width: 767px) {
   .cardHovered {
   width: 100%;
@@ -113,16 +114,21 @@ box-shadow: 0px 40px 69px -34px rgba(0,0,0,0.49);
 .dropbox .storage {
   font-size: small;
 }
+
+.cardHovered .progressBar .progress .progress-bar{
+  background: #fbbc44;
+}
 .progress {
   height: 5px;
 }
 .progress .bg-blue {
   background: #6190f7;
 }
-.progress-bar .bg-warning {
-  background: #fbbc44;
-}
 
+.cardsContainer .col-sm-6 {
+  margin-bottom: 60px !important;
+  cursor: pointer;
+}
 /* Folders  */
 
 .folders,

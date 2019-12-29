@@ -5,7 +5,7 @@ function RecentFile(props) {
     <div className="recentFiles p-0 m-0">
       <div className="header my-3">
         <span className="title">Recent Files</span>
-        <a href="#" className="float-lg-right">
+        <a href="#" className="float-right">
           View all
         </a>
       </div>

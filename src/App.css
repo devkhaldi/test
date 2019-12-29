@@ -4,28 +4,53 @@
 }
 body {
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
-
+.card-body {
+  padding: none;
+}
 .fa-bars {
   float: right;
   display: none !important;
 }
+@media (min-width: 768px) {
+  .col-md-3 {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+  .col-md-7 {
+    flex: 0 0 70% !important;
+    max-width: 70%;
+  }
+}
 
-@media (max-width: 767px) {
+@media (min-width: 1300px) {
+  .col-md-3 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+  .col-md-7 {
+    flex: 0 0 60% !important;
+    max-width: 60%;
+  }
+}
+@media (max-width: 1300px) {
   .fa-bars {
     display: block !important;
     position: relative;
-    top: 20px !important;
+    top: 22px;
+    left: 5px;
     font-size: 30px !important;
     cursor: pointer;
-    color: #ddd;
+    color: #5a65fe;
   }
   .mainCompoContainer {
     display: flex !important;
     flex-wrap: wrap !important;
   }
 }
-@media (min-width: 768px) {
+
+@media (min-width: 1300px) {
   #collapseExample {
     display: none !important;
   }
@@ -73,18 +98,5 @@ body {
 .content {
   background: #f6f8fc;
 }
-.search {
-}
-.recentFiles {
-}
 
-/* End Content */
-
-/* DataUsage */
-.dataUsage {
-}
-.storageUsage {
-}
-.upgradeAccount {
-}
 /* End DataUsage */

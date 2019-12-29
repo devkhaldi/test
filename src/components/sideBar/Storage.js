@@ -10,8 +10,7 @@ export class Storage extends Component {
     this.templatesFiles = React.createRef();
     this.projectsFiles = React.createRef();
     this.projectorCourcesFiles = React.createRef();
-
-
+    
     // icons refs
     this.analyticsIcon = React.createRef();
     this.assetsIcon = React.createRef();
@@ -73,7 +72,6 @@ export class Storage extends Component {
         marketingFilesAppend: true
       });
     }
-    
   };
   showTemplatesFiles = () => {
     if (this.state.templatesFilesAppend) {
@@ -236,7 +234,7 @@ export class Storage extends Component {
             <i className="fas fa-chevron-right mr-2"></i>
           </div>
         </div>
-        <div className="storageCreateNew my-3">
+        <div className="storageCreateNew ">
           <button className="form-control">
             <div className="container-fluid">
               <div className="row m-0">

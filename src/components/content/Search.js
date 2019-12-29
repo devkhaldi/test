@@ -65,10 +65,10 @@ export class Search extends Component {
               <ResponsiveSideBar />
             </div>
           </div>
-          <div className="containerFluid cardsContainer my-4">
-            <div className="row">
+          <div className="containerFluid  my-4">
+            <div className="row cardsContainer">
               {/* Google drive */}
-              <div className="col-xs-6 col-md-4 p-0">
+              <div className="col-sm-6 col-md-4 p-0">
                 <div
                   ref={this.googleDriveRef}
                   onMouseEnter={this.googleDriveMouseEnter}
@@ -92,7 +92,7 @@ export class Search extends Component {
                   <div className="progressBar">
                     <div className="progress">
                       <div
-                        className="progress-bar bg-warning"
+                        className="progress-bar"
                         role="progressbar"
                         style={{ width: "75%" }}
                         aria-valuenow="75"
@@ -103,7 +103,7 @@ export class Search extends Component {
                 </div>
               </div>
               {/* Drop box */}
-              <div className="col-xs-6 col-md-4 p-0">
+              <div className="col-sm-6 col-md-4 p-0">
                 <div
                   ref={this.dropBoxRef}
                   onMouseEnter={this.dropBoxMouseEnter}
@@ -138,7 +138,7 @@ export class Search extends Component {
                 </div>
               </div>
               {/* One drive */}
-              <div className="col-sm-6 col-md-4 p-0">
+              <div className="col-sm-6 col-md-4">
                 <div
                   ref={this.oneDriveRef}
                   onMouseEnter={this.oneDriveMouseEnter}

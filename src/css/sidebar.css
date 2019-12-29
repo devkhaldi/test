@@ -2,17 +2,11 @@
   padding: 0px;
   background: #fff;
   border-right: solid 1px #f2f3f7;
-  height: 900px;
-  overflow: scroll;
+  height: 1000px;
+  overflow-y: scroll;
 }
 
-@media (min-width: 1200px) {
-  .sideBar {
-    width: 240px !important;
-    top: 0px;
-  }
-}
-@media (max-width: 767px) {
+@media (max-width: 1300px) {
   .sideBar {
     display: none;
   }
@@ -137,7 +131,13 @@
   background: #7983ff;
   font-size: 10px !important;
   color: #fdfeff;
-  border-radius: 4px;
+  border-radius: 6px;
+}
+.storageCreateNew button span {
+  color: #fff ;
+}
+button {
+  box-shadow: none !important;
 }
 
 .storageSharedWithMe,
